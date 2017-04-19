@@ -1,0 +1,21 @@
+{
+  "name": "nodetutorial",
+  "description": "Just to learn node",
+  "main": "app.js",
+  "authors": [
+    "Motasem ALwazir"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Tutorial",
+    "node"
+  ],
+  "homepage": "https://github.com/MotasemWaizr/NodeTutorial",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
