@@ -3,7 +3,12 @@ var express=require('express');
 
 var app=express();
 
-
+//This for static file routing
+//remember the express starts finding the routing pattern from top to down
+//It returns the result from the first match
+//example for this : http://localhost:5000/css/styles.css
+//http://localhost:5000/js/bootstrap.min.js
+app.use(express.static('public'));//this is called middleware
 app.get('/',function(req,res){
     res.send("Hello world");
 });
