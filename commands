@@ -2,3 +2,6 @@
 2- npm install express --save: to install express 
                             --save is to add the lib to the package.json 
 3- node app.js : compile and run app.js
+4- in package.json, the lib version can be  :"^4.15.2" means take last update like  4.x.x
+                                            :"~4.15.2" means take last update like 4.15.x
+                                            :"4.15.2" means take this specific version 
