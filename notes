@@ -7,3 +7,4 @@
                                             :"4.15.2" means take this specific version 
 5- npm start: a standard way to start the application on node.js, you just add start to scripts with the command to start the application and the use npm start to start the application
 6- Bower is used to install the libs on the front side
+7- npm install bower -g : install bower globaly
