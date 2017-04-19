@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/MotasemWaizr/NodeTutorial#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2"//"^4.15.2" means take last update like  4.x.x
+                        //"~4.15.2" means take last update like 4.15.x
+                        //"4.15.2" means take this specific version   
   }
 }
