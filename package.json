@@ -4,7 +4,8 @@
   "description": "Just to learn node",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,6 @@
   },
   "homepage": "https://github.com/MotasemWaizr/NodeTutorial#readme",
   "dependencies": {
-    "express": "^4.15.2"//"^4.15.2" means take last update like  4.x.x
-                        //"~4.15.2" means take last update like 4.15.x
-                        //"4.15.2" means take this specific version   
+    "express": "^4.15.2"  
   }
 }
