@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/MotasemWaizr/NodeTutorial/issues"
   },
-  "homepage": "https://github.com/MotasemWaizr/NodeTutorial#readme"
+  "homepage": "https://github.com/MotasemWaizr/NodeTutorial#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
