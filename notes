@@ -13,4 +13,5 @@
 9- file .bowerrc : bower configuration. 
           add {"directory": "public/lib"} not all bower files will go there
           public/js and public/lib are for our files
-          
+10- JSCS: manages the style of your JS code
+10 JSHints: enforce code standards: for example  add ; add the end, you variables are defined
