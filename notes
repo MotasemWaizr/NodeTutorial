@@ -10,3 +10,7 @@
 7- npm install bower -g : install bower globaly
 8- bower init: start the bower init to create bower.json
 8- bower install --save bootstrap
+9- file .bowerrc : bower configuration. 
+          add {"directory": "public/lib"} not all bower files will go there
+          public/js and public/lib are for our files
+          
