@@ -37,6 +37,5 @@ jspm_packages
 .node_repl_history
 
 
-# bower component
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-bower_components
+# bower component custom folder
+public/lib
