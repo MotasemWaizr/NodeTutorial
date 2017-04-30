@@ -22,6 +22,11 @@
   },
   "homepage": "https://github.com/MotasemWaizr/NodeTutorial#readme",
   "dependencies": {
-    "express": "^4.15.2"  
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.4"
   }
 }
