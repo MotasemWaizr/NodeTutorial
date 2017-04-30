@@ -16,3 +16,5 @@
           public/js and public/css are for our files
 10- JSCS: manages the style of your JS code
 11- JSHints: enforce code standards: for example  add ; add the end, you variables are defined 
+12- install gulp :  globaly : npm install -g gulp
+                    for dev: npm install gulp --save-dev 
