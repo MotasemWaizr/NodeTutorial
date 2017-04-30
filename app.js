@@ -1,7 +1,7 @@
 
-var express=require('express');
+var express = require('express');
 
-var app=express();
+var app = express();
 
 //This for static file routing
 //remember the express starts finding the routing pattern from top to down
@@ -14,16 +14,16 @@ app.use(express.static('public'));//this is called middleware
 //any request, express will try first to find it in public and then here
 app.use(express.static('src/views'));
 
-app.get('/',function(req,res){
-    res.send("Hello world");
+app.get('/',function(req,res) {
+    res.send('Hello world');
 });
 
-app.get('/books',function(req,res){
-    res.send("Hello Books");
+app.get('/books',function(req,res) {
+    res.send('Hello Books');
 });
 
-var port=5000;
-app.listen(port, function(err){
-    console.log('running server on port '+ port);
+var port = 5000;
+app.listen(port, function(err) {
+    console.log('running server on port ' + port);
 
 });
