@@ -16,10 +16,12 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "public/lib"
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
     "font-awesome": "font-awsome#^4.7.0"
-  }
+  },
+  "private": true
 }
