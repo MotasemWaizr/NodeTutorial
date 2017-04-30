@@ -5,13 +5,14 @@
 4- in package.json, the lib version can be  :"^4.15.2" means take last update like  4.x.x
                                             :"~4.15.2" means take last update like 4.15.x
                                             :"4.15.2" means take this specific version 
-5- npm start: a standard way to start the application on node.js, you just add start to scripts with the command to start the application and the use npm start to start the application
+5- npm start: a standard way to start the application on node.js, 
+    you just add start to scripts with the command to start the application and the use npm start to start the application
 6- Bower is used to install the libs on the front side
 7- npm install bower -g : install bower globaly
 8- bower init: start the bower init to create bower.json
 8- bower install --save bootstrap
 9- file .bowerrc : bower configuration. 
-          add {"directory": "public/lib"} not all bower files will go there
-          public/js and public/lib are for our files
+          add {"directory": "public/lib"} now all bower files will go there
+          public/js and public/css are for our files
 10- JSCS: manages the style of your JS code
-10 JSHints: enforce code standards: for example  add ; add the end, you variables are defined
+11- JSHints: enforce code standards: for example  add ; add the end, you variables are defined
