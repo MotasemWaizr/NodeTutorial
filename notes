@@ -29,3 +29,5 @@
     1- configure gulp-inject in the gulfile.js
     2- add <!-- inject:css --> and <!-- inject:js --> to the html file 
     3- fun gulp inject
+17- Nodemon: monitor our file and restart the server or a task whenever there is a change 
+    1- install using : npm install --save-dev gulp-nodemon
