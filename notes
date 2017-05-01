@@ -18,3 +18,4 @@
 11- JSHints: enforce code standards: for example  add ; add the end, you variables are defined 
 12- install gulp :  globaly : npm install -g gulp
                     for dev: npm install gulp --save-dev 
+13- create gulpFile.js which contains the Gulp's configuration
