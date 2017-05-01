@@ -1,7 +1,11 @@
+-var list = [1,2,3,4]
 html
     head
         title MyApp
-    body
-        h1 my App 
+    body(class="myClass")
+        h1(id="myId") my App 
         p
             h3 sub heading
+            ul
+                each val in list
+                    li= val
