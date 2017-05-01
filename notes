@@ -34,3 +34,6 @@
     2- define task in gulp file to start the server on change
     3- the task can also start other tasks 
     4- process.env.--- can be used to read env variable deinfed in the task
+18- Templating engines: 
+    1- Jade 
+        a- install: npm install --save jade
