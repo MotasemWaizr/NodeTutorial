@@ -19,10 +19,46 @@ app.use(express.static('public'));//this is called middleware
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
+var books = [
+{
+    title : 'The Lightning Thief',
+    author : 'Rick Riordan',
+    genre: 'Historical Fiction',
+    read: false
+},
+{
+    title : 'The Sea of Monsters',
+    author : 'Rick Riordan',
+    genre: 'Historical Fiction',
+    read: false
+},
+{
+    title : 'Sophie\'s World : The Greek Philosophers',
+    author : 'Jostein Gaarder',
+    genre: 'Historical Fiction',
+    read: false
+},
+{
+    title : 'Lucene in Action, Second Edition',
+    author : 'Michael McCandless',
+    genre: 'Historical Fiction',
+    read: false
+}
+];
+
 //To get here the route must be /Books/
 bookRouter.route('/')
     .get(function(req,res) {
-    res.send('Hello Books');
+    res.render('books',{title:'Hello from ejs',
+        nav:[
+            {
+                Link:'/Books',
+                Text:'Books'
+            }, {
+                Link:'/Authors',
+                Text:'Authors'
+            },
+    ]});
 });
 
 //To get her the route must be /Books/single
