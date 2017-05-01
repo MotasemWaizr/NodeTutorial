@@ -26,3 +26,6 @@
             <!-- endbower -->
     2- run gult inject  // inject is the name of the take in gulp
 16- install gulp-inject to inject out css and js
+    1- configure gulp-inject in the gulfile.js
+    2- add <!-- inject:css --> and <!-- inject:js --> to the html file 
+    3- fun gulp inject
