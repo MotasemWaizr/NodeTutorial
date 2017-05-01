@@ -23,5 +23,22 @@
     "bootstrap": "^3.3.7",
     "font-awesome": "font-awsome#^4.7.0"
   },
+  "overrides":{
+    "bootstrap":{
+      "main":[
+        "dist/js/bootstrap.min.js",
+        "dist/css/bootstrap.min.css",
+        "less/bootstrap.less"
+      ]
+    },
+    "font-awesome":{
+      "main":[
+        "less/font-awsome.less",
+        "css/font-awsome.css",
+        "scss/font-awsome.scss"
+        
+      ]
+    }
+  },
   "private": true
 }
