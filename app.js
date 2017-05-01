@@ -3,6 +3,8 @@ var express = require('express');
 
 var app = express();
 
+var bookRouter = express.Router();
+
 //This for static file routing
 //remember the express starts finding the routing pattern from top to down
 //It returns the result from the first match
@@ -17,8 +19,31 @@ app.use(express.static('public'));//this is called middleware
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
+//To get here the route must be /Books/
+bookRouter.route('/')
+    .get(function(req,res) {
+    res.send('Hello Books');
+});
+
+//To get her the route must be /Books/single
+bookRouter.route('/single')
+    .get(function(req,res) {
+    res.send('Hello Single  Book');
+});
+
+//When there is a request with /Books then use book routers
+app.use('/Books',bookRouter);
 app.get('/',function(req,res) {
-    res.render('index',{title:'Hello from ejs',list:[1,2,3,4,5]});
+    res.render('index',{title:'Hello from ejs',
+        nav:[
+            {
+                Link:'/Books',
+                Text:'Books'
+            }, {
+                Link:'/Authors',
+                Text:'Authors'
+            },
+    ]});
 });
 
 app.get('/books',function(req,res) {
