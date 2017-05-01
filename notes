@@ -31,3 +31,6 @@
     3- fun gulp inject
 17- Nodemon: monitor our file and restart the server or a task whenever there is a change 
     1- install using : npm install --save-dev gulp-nodemon
+    2- define task in gulp file to start the server on change
+    3- the task can also start other tasks 
+    4- process.env.--- can be used to read env variable deinfed in the task
