@@ -15,7 +15,10 @@ app.use(express.static('public'));//this is called middleware
 //app.use(express.static('src/views'));
 //The previous line is commented becuase we want to start using templates and we want the views to be defined as a variable
 app.set('views', './src/views');
-app.set('view engine', 'jade');
+
+var handlebars = require('express-handlebars');
+app.engine('.hbs', handlebars({extname: '.hbs'}));
+app.set('view engine', '.hbs');
 
 app.get('/',function(req,res) {
     res.render('jade/index',{list:[1,2,3,4,5]});
