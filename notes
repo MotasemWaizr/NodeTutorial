@@ -25,3 +25,4 @@
             <!-- bower:js -->
             <!-- endbower -->
     2- run gult inject  // inject is the name of the take in gulp
+16- install gulp-inject to inject out css and js
