@@ -12,7 +12,10 @@ app.use(express.static('public'));//this is called middleware
 
 // add second middleware to server html files
 //any request, express will try first to find it in public and then here
-app.use(express.static('src/views'));
+//app.use(express.static('src/views'));
+//The previous line is commented becuase we want to start using templates and we want the views to be defined as a variable
+app.set('views', './src/views');
+app.set('view enging', 'jade');
 
 app.get('/',function(req,res) {
     res.send('Hello world');
