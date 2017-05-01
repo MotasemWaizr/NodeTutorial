@@ -33,9 +33,9 @@
     },
     "font-awesome":{
       "main":[
-        "less/font-awsome.less",
-        "css/font-awsome.css",
-        "scss/font-awsome.scss"
+        "less/font-awesome.less",
+        "css/font-awesome.css",
+        "scss/font-awesome.scss"
         
       ]
     }
