@@ -30,10 +30,10 @@ gulp.task('inject',function() {
         directory:'./public/lib',
         ignorePath:'../../public'
     };
-    return gulp.src('./src/views/*.html')
+    return gulp.src('./src/views/jade/*.jade')
     .pipe(wiredep(options))
     .pipe(inject(injectSrc,injectOptions))
-    .pipe(gulp.dest('./src/views'));
+    .pipe(gulp.dest('./src/views/jade'));
 });
 
 //style and inject will run when serve starts
