@@ -19,3 +19,4 @@
 12- install gulp :  globaly : npm install -g gulp
                     for dev: npm install gulp --save-dev 
 13- create gulpFile.js which contains the Gulp's configuration
+14- wiredep is used to inkect thte js and css files in the html files
