@@ -35,5 +35,9 @@
     3- the task can also start other tasks 
     4- process.env.--- can be used to read env variable deinfed in the task
 18- Templating engines: 
-    1- Jade 
-        a- install: npm install --save jade
+    1- in app set views variable 
+    2- set template engine variable 
+    3- Templates: 
+        1- Jade 
+            a- install: npm install --save jade
+            
