@@ -58,7 +58,9 @@ bookRouter.route('/')
                 Link:'/Authors',
                 Text:'Authors'
             },
-    ]});
+            ],
+        books:books
+    });
 });
 
 //To get her the route must be /Books/single
