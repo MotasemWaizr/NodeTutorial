@@ -1,11 +1,12 @@
 var gulp = require('gulp');//get gulp
 var jshint = require('gulp-jshint');//js hint to check syntax
 var jscs = require('gulp-jscs');
-var jsFile = ['*.js', 'src/**/*.js'];//JS file in the porject
+var jsFiles = ['*.js', 'src/**/*.js'];//JS file in the porject
+var nodemon = require('gulp-nodemon');
 
 //Task to check the js file syntax and formatting
 gulp.task('style',function()  {
-    return gulp.src(jsFile)
+    return gulp.src(jsFiles)
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish',{
         verbose:true
@@ -33,4 +34,22 @@ gulp.task('inject',function() {
     .pipe(wiredep(options))
     .pipe(inject(injectSrc,injectOptions))
     .pipe(gulp.dest('./src/views'));
+});
+
+//style and inject will run when serve starts
+gulp.task('serve',['style','inject'], function() {
+    var options = {
+        script: 'app.js',
+        delayTime: 1,
+        //Env parameters like connection string, port
+        env: {
+            'PORT':3000
+        },
+        watch: jsFiles
+    };
+
+    return nodemon(options)
+    .on('restart',function(ev) {
+        console.log('Restarting...');
+    });
 });
