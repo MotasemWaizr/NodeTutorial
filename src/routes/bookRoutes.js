@@ -55,7 +55,7 @@ var books = [
 //To get here the route must be /Books/
 bookRouter.route('/')
     .get(function (req, res) {
-        res.render('books', {
+        res.render('books/bookListView', {
             title: 'Books List',
             nav: [
                 {
@@ -74,7 +74,7 @@ bookRouter.route('/')
 bookRouter.route('/:id')
     .get(function (req, res) {
         var id = req.params.id;
-        res.render('book', {
+        res.render('books/bookView', {
             nav: [
                 {
                     Link: '/Books',
