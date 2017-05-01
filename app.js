@@ -15,14 +15,14 @@ app.use(express.static('public'));//this is called middleware
 //app.use(express.static('src/views'));
 //The previous line is commented becuase we want to start using templates and we want the views to be defined as a variable
 app.set('views', './src/views');
-app.set('view enging', 'jade');
+app.set('view engine', 'jade');
 
 app.get('/',function(req,res) {
-    res.send('Hello world');
+    res.render('jade/index');
 });
 
 app.get('/books',function(req,res) {
-    res.send('Hello Books');
+    res.send('Hello Books1');
 });
 //Take value from environment variables
 var port = process.env.PORT || 5000;
