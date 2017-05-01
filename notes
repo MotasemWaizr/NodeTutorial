@@ -38,6 +38,6 @@
     1- in app set views variable 
     2- set template engine variable 
     3- Templates: 
-        1- Jade 
-            a- install: npm install --save jade
+        1- Jade : install: npm install --save jade
+        2-Handlebars : npm install --save express-handlebars
             
