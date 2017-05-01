@@ -21,7 +21,7 @@ app.engine('.hbs', handlebars({extname: '.hbs'}));
 app.set('view engine', '.hbs');
 
 app.get('/',function(req,res) {
-    res.render('jade/index',{list:[1,2,3,4,5]});
+    res.render('hbs/index',{list:[1,2,3,4,5]});
 });
 
 app.get('/books',function(req,res) {
