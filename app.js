@@ -21,8 +21,9 @@ app.get('/',function(req,res) {
 app.get('/books',function(req,res) {
     res.send('Hello Books');
 });
+//Take value from environment variables
+var port = process.env.PORT || 5000;
 
-var port = 5000;
 app.listen(port, function(err) {
     console.log('running server on port ' + port);
 
