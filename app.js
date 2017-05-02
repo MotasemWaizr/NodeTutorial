@@ -3,7 +3,17 @@ var express = require('express');
 
 var app = express();
 
-var bookRouter = require('./src/routes/bookRoutes.js');
+var nav = [
+                {
+                    Link: '/Books',
+                    Text: 'Books'
+                }, {
+                    Link: '/Authors',
+                    Text: 'Authors'
+                },
+            ];
+
+var bookRouter = require('./src/routes/bookRoutes.js')(nav);
 
 //This for static file routing
 //remember the express starts finding the routing pattern from top to down
@@ -23,15 +33,7 @@ app.set('view engine', 'ejs');
 app.use('/Books',bookRouter);
 app.get('/',function(req,res) {
     res.render('index',{title:'Hello from ejs',
-        nav:[
-            {
-                Link:'/Books',
-                Text:'Books'
-            }, {
-                Link:'/Authors',
-                Text:'Authors'
-            },
-    ]});
+        nav:nav});
 });
 
 app.get('/books',function(req,res) {
