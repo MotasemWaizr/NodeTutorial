@@ -14,6 +14,7 @@ var nav = [
             ];
 
 var bookRouter = require('./src/routes/bookRoutes.js')(nav);
+var adminRouter = require('./src/routes/adminRoutes.js')(nav);
 
 //This for static file routing
 //remember the express starts finding the routing pattern from top to down
@@ -31,6 +32,7 @@ app.set('view engine', 'ejs');
 
 //When there is a request with /Books then use book routers
 app.use('/Books',bookRouter);
+app.use('/Admin',adminRouter);
 app.get('/',function(req,res) {
     res.render('index',{title:'Hello from ejs',
         nav:nav});
