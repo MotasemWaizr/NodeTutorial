@@ -46,4 +46,6 @@
         1- execut "mongo libraryApp" to open connection with libraryApp DB. replace this one with other DB if needed
         2- show collections: to display the current collections in the db 
         3- db.books.find(); show all the records in books collection
+        4- db.books.remove({}) : delete all books 
+        
 
