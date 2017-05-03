@@ -42,3 +42,8 @@
         2-Handlebars : npm install --save express-handlebars
         3- ejs: npm install --save ejs
 19- install MongoSB: npm install mongodb --save
+    1- In the command line do the following to check the DB: 
+        1- execut "mongo libraryApp" to open connection with libraryApp DB. replace this one with other DB if needed
+        2- show collections: to display the current collections in the db 
+        3- db.books.find(); show all the records in books collection
+
