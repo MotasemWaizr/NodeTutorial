@@ -59,6 +59,7 @@ var router = function (nav) {
             var url = 'mongodb://localhost:27017/libraryApp';
             mongodb.connect(url, function (err, db) {
                 var collection = db.collection('books');
+                //Use insertOne to insert one objedct. Pass object as JSON
                 collection.insertMany(books,
                     function (err, results) {
                         res.send(results);
