@@ -43,10 +43,13 @@
         3- ejs: npm install --save ejs
 19- install MongoSB: npm install mongodb --save
     1- In the command line do the following to check the DB: 
-        1- execut "mongo libraryApp" to open connection with libraryApp DB. replace this one with other DB if needed
-        2- show collections: to display the current collections in the db 
-        3- db.books.find(); show all the records in books collection
+        1- sudo systemctl start mongodb: start the server
+        2- sudo systemctl status mongodb : DB status
+        1- sudo systemctl stop mongodb: stop the server
+        3- execut "mongo libraryApp" to open connection with libraryApp DB. replace this one with other DB if needed
+        4- show collections: to display the current collections in the db 
+        5- db.books.find(); show all the records in books collection
             db.books.find().pretty;
-        4- db.books.remove({}) : delete all books 
+        6- db.books.remove({}) : delete all books 
 
 
